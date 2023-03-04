@@ -1,8 +1,8 @@
 package first_project;
 
 public class Rectangle {
-	private int width;
-	private int height;
+	private static int width;
+	private static int height;
 	
 	//아래 width와 height가 인자로 들어온다.(위로!)
 	
@@ -14,7 +14,11 @@ public class Rectangle {
 		this.height = height;
 	}
 	*/
-	public int area() {
+	public Rectangle(int width) {
+		
+		this.width = width;
+	}
+	public static int area() {
 		return width*height;
 	}
 	

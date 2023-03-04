@@ -5,19 +5,30 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-
 public class Main {
 	public static void main(String[] args) {
 		
-		Number number1 = new Number();
-		Number number2 = new Number();
+		Person p = new Person("홍길동", 99);
+	
+		Student s = new Student();
+		System.out.println(s.getName());
 		
-		number1.num1 = 1;
-		//얜 스테틱이니까 num1=0이었던걸 1로 바꿔주고
-		number1.num2 = 1;
-		//다시 num2에서 1을 불러와도 0이 아니고 1이 나오는것. 얜 스테틱아니지 (밑에 코드 !)
-		System.out.println(number2.num1);
-		System.out.println(number2.num2);
+		
+		s.setName("성춘향");
+		System.out.println(s.getName());
+		
+		p.sleep();
+		s.sleep();
+		
+//		Number number1 = new Number();
+//		Number number2 = new Number();
+//		
+//		number1.num1 = 1;
+//		//얜 스테틱이니까 num1=0이었던걸 1로 바꿔주고
+//		number1.num2 = 1;
+//		//다시 num2에서 1을 불러와도 0이 아니고 1이 나오는것. 얜 스테틱아니지 (밑에 코드 !)
+//		System.out.println(number2.num1);
+//		System.out.println(number2.num2);
 		
 		
 		
@@ -36,29 +47,33 @@ public class Main {
 //		Person person1 = new Person();
 //		person1.setName("이채영");
 //		System.out.println(person1.getName());
-		/*Scanner scanner = new Scanner(System.in);
-		ArrayList<Rectangle> rect = new ArrayList<>();
 		
-		while (true) {
-			System.out.println("사각형의 가로와 세로 길이를 띄어쓰기를 기준으로 입력해주세요.");
-			int width = scanner.nextInt();
-			int height = scanner.nextInt();
-			
-			if (width == 0 && height == 0) break;
-			
-			Rectangle rectangle1 = new Rectangle(width);
-			rectangle1.setHeight(height);
-			rect.add(rectangle1);
-		}
+//		Scanner scanner = new Scanner(System.in);
+//		ArrayList<Rectangle> rect = new ArrayList<>();
+//		
+//		while (true) {
+//			System.out.println("사각형의 가로와 세로 길이를 띄어쓰기를 기준으로 입력해주세요.");
+//			int width = scanner.nextInt();
+//			int height = scanner.nextInt();
+//			
+//			if (width == 0 && height == 0) break;
+//			
+//			Rectangle rectangle1 = new Rectangle(width);
+//			rectangle1.setHeight(height);
+//			rect.add(rectangle1);
+//		}
+//		
+//		for (Rectangle rectangle : rect) {
+//			System.out.println("가로 길이는 : " + rectangle.getWidth());
+//			System.out.println("세로 길이는 : " + rectangle.getHeight());
+//			System.out.println("넓이는 : " + rectangle.area());
+//			System.out.println("----------------------------");
+//			
+//		}
+//		
+		//int n = Rectangle.area.size();
 		
-		for (Rectangle rectangle : rect) {
-			System.out.println("가로 길이는 : " + rectangle.getWidth());
-			System.out.println("세로 길이는 : " + rectangle.getHeight());
-			System.out.println("넓이는 : " + rectangle.area());
-			System.out.println("----------------------------");
-			
-		}
-	*/
+		//System.out.println("Rectangle 인스턴스의 개수는:" + n);
 		
 		
 
