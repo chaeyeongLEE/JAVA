@@ -1,8 +1,6 @@
 package test3;
 
 public class Kim extends Student {
-	public void test() {}
-	
 	
 	public Kim(String name, String school, int age, int studentid) {
 		super (name, school,age, studentid);

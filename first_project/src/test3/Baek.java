@@ -1,9 +1,6 @@
 package test3;
 
 public class Baek extends Student {
-	public void test() {
-	
-	}
 	
 	public Baek(String name, String school, int age, int studentid) {
 		super (name, school,age, studentid);

@@ -13,10 +13,5 @@ public abstract class Student {
 		this.studentid=studentid;
 	}
 	
-	public abstract void test(
-			);
-	
-	public void todo() {
-		System.out.println("점심은 무엇을?");
-}
+	public abstract void todo();
 }
